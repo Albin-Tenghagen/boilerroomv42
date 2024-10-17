@@ -46,6 +46,8 @@ function kalkylator() {
     
     alert(`Resultatet av ${firstInput} ${operation} ${secondInput} är: ${result}`);
     
+    console.log(result);
+    
     
     }
     
