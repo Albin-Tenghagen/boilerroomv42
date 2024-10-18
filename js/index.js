@@ -1,25 +1,19 @@
+//denna kod skapade
 function kalkylator() {
     let firstInput = parseFloat(prompt("första siffran"));
     let secondInput = parseFloat(prompt("andra siffran"));
-    
     
     if (isNaN(firstInput) || isNaN(secondInput)) {
        alert("Felaktig inmatning. Var vänlig mata in giltiga nummer.");
            return;
     }
     
-    
-    
-    
      let firstValue = Number(firstInput)
     let secondValue = Number(secondInput)
     
-    
     let operation = prompt("välj en operation (+, -, /, *)")
     
-    
     let result;
-    
     
     switch (operation) {
        case '+':
@@ -43,13 +37,8 @@ function kalkylator() {
        return;
     }
     
-    
     alert(`Resultatet av ${firstInput} ${operation} ${secondInput} är: ${result}`);
-    
-    console.log(result);
-    
     
     }
     
-    
-    kalkylator()
+kalkylator()
