@@ -74,10 +74,10 @@ function kalkylator() {
       break;
       case '**':
         if  (secondValue === 0) {
-            alert(`${firstInput} upphöjd med ${secondInput} är lika med noll.`)
+            alert(`${firstValue} upphöjd med ${secondValue} är lika med noll.`)
             return;
-        } else if (firstInput === 0) {
-            alert(`${secondValue} upphöjd med ${firstInput} är lika med noll.`)
+        } else if (firstValue === 0) {
+            alert(`${firstValue} upphöjd med ${secondValue} är lika med noll.`)
             return;
         }
          result = firstValue ** secondValue;  
