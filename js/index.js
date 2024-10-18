@@ -63,6 +63,9 @@ function kalkylator() {
            if (secondValue === 0) {
                alert('Kan inde dividera med noll!')
                return;
+           } else if (firstValue === 0){
+            alert('Kan inde dividera med noll!')
+            return;
            }
            result = firstValue / secondValue;
        break;
