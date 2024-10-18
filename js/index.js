@@ -18,19 +18,6 @@ function operator1(){
    return secondInput; 
 }
 
-
-
-
-
-// const firstInput = document.getElementById("siffra1");
-// const inputValue = firstInput.value;
-
-
-
-
-// const secondInput = document.getElementById("siffra2");
-
-
 function kalkylator() {
 
     let inputValue1 = sparaSiffra1();
@@ -92,9 +79,8 @@ function kalkylator() {
     
     
     alert(`Resultatet av ${firstValue} ${operatorIKalkylator} ${secondValue} är: ${result}`);
-    
+    console.log(`Resultatet av ${firstValue} ${operatorIKalkylator} ${secondValue} är: ${result}`)
     console.log(result);
-    
     
     }
     
