@@ -1,5 +1,29 @@
 body {
+    /* max-height: 100vh; */
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    background:radial-gradient(pink, purple);
+    border: 2px solid black;
+    border-radius: 4rem;
+    padding: 3%
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;    
+}
+
+article {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 4rem;
+    margin: .5%;
+    padding: 3%;
 }
