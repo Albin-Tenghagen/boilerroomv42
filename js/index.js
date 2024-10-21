@@ -1,19 +1,18 @@
-// const operator = document.getElementById("operator");
 
 function sparaSiffra1(){
-let firstInput = document.getElementById('siffra1').value;
-console.log(firstInput);
-return firstInput;
+    const firstInput = document.getElementById('siffra1').value;
+    console.log(firstInput);
+    return firstInput;
 }
 
 function operator1(){
-    let operator = document.getElementById('operator').value;
+    const operator = document.getElementById('operator').value;
     console.log(operator);
     return operator;
 }
 
  function sparaSiffra2(){
-   let secondInput = document.getElementById('siffra2').value;
+   const secondInput = document.getElementById('siffra2').value;
    console.log(secondInput);
    return secondInput; 
 }
