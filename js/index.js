@@ -4,18 +4,21 @@ function sparaSiffra1(){
     console.log(firstInput);
     return firstInput;
 }
+// hämtar första siffran från användaren
 
 function operator1(){
     const operator = document.getElementById('operator').value;
     console.log(operator);
     return operator;
 }
+// hämtar operatorn från användaren
 
  function sparaSiffra2(){
    const secondInput = document.getElementById('siffra2').value;
    console.log(secondInput);
    return secondInput; 
 }
+// hämtar operatorn siffran från användaren
 
 function kalkylator() {
 
