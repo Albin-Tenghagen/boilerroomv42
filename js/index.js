@@ -43,7 +43,7 @@ function kalkylator() {
            return;
     }
     //kontrollerar så att variablarna är nummer.
-
+        
 
     let result;
     

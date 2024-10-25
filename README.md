@@ -17,7 +17,7 @@ Division (/)
 Exponentiering (^)
 Modulus (%)
 Avsluta programmet
-Användarinteraktion:
+Användarinteraktion:    
 Använd loopar för att låta användaren utföra flera beräkningar utan att starta om programmet.
 Efter varje beräkning ska användaren få möjlighet att återgå till menyn eller avsluta.
 Beslutstagande och Logik:
