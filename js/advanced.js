@@ -1,38 +1,77 @@
 console.log("JavaScript file loaded!");
-function sparaSiffra1(button){
-    const firstInput = button.textContent;
-    //const firstInput = document.getElementById('siffra1').value;
-    console.log(firstInput);
-    // return firstInput;
-}
-// hämtar första siffran från användaren
 
-function operator1(button){
-    const operator = button.textContent;
-    console.log(operator);
-    // return operator;
-}
-// hämtar operatorn från användaren
+// Globala variabler för att lagra siffror och operator
+let firstInput = null;
+let secondInput = null;
+let operator = null;
 
- function sparaSiffra2(){
-   const secondInput = document.getElementById('siffra2').value;
-   console.log(secondInput);
-   return secondInput; 
+function sparaSiffra1(button) {
+    firstInput = Number(button.textContent); // Tilldelar värdet till den globala variabeln
+    console.log("Första siffran:", firstInput);
 }
 
+function operator1(button) {
+    operator = button.textContent; // Tilldelar operatorn till den globala variabeln
+    console.log("Operator:", operator);
+}
 
-// function calculation() {
-//     do {
-//         for (){
+function sparaSiffra2(button) {
+    secondInput = Number(button.textContent); // Tilldelar värdet till den globala variabeln
+    console.log("Andra siffran:", secondInput);
+}
 
+function calculation() {
+    let continueCalculation = true;
 
+    do {
+        // Kontrollera om alla värden är tilldelade
+        if (firstInput === null || secondInput === null || operator === null) {
+            alert("Felaktig inmatning. Var vänlig mata in giltiga nummer.");
+            return;
+        }
 
+        let result;
 
-//         }
+        switch (operator) {
+            case '+':
+                result = firstInput + secondInput;
+                break;
+            case '-':
+                result = firstInput - secondInput;
+                break;
+            case '/':
+                if (secondInput === 0) {
+                    alert('Kan inte dividera med noll!');
+                    return;
+                }
+                result = firstInput / secondInput;
+                break;
+            case '*':
+                result = firstInput * secondInput;
+                break;
+            case '%':
+                result = firstInput % secondInput;
+                break;
+            case '**':
+                result = firstInput ** secondInput;
+                break;
+            default:
+                alert('Ogiltigt räknesätt, försök igen');
+                return;
+        }
 
+        console.log(`Resultat: ${result}`);
 
-//     }while(ternary == true)
+        // Frågar om användaren vill fortsätta och läser in svaret
+        let ternaryChoice = prompt('Vill du fortsätta? "Ja" eller "Nej"').toLowerCase();
+        continueCalculation = ternaryChoice === "ja" ? true : false;
 
+        if (continueCalculation) {
+            // Återställ variabler för en ny beräkning
+            firstInput = null;
+            secondInput = null;
+            operator = null;
+        }
 
-
-// }
+    } while (continueCalculation === true);
+}
