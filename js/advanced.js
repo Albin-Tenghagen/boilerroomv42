@@ -1,16 +1,16 @@
-
+console.log("JavaScript file loaded!");
 function sparaSiffra1(button){
-    const firstInput = button.value;
-    // const firstInput = document.getElementById('siffra1').value;
+    const firstInput = button.textContent;
+    //const firstInput = document.getElementById('siffra1').value;
     console.log(firstInput);
-    return firstInput;
+    // return firstInput;
 }
 // hämtar första siffran från användaren
 
 function operator1(button){
     const operator = button.textContent;
     console.log(operator);
-    return operator;
+    // return operator;
 }
 // hämtar operatorn från användaren
 
@@ -21,18 +21,18 @@ function operator1(button){
 }
 
 
-function calculation() {
-    do {
-        for (){
+// function calculation() {
+//     do {
+//         for (){
 
 
 
 
-        }
+//         }
 
 
-    }while(ternary == true)
+//     }while(ternary == true)
 
 
 
-}
+// }
