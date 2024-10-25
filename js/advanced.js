@@ -1,6 +1,7 @@
 
-function sparaSiffra1(){
-    const firstInput = document.getElementById('siffra1').value;
+function sparaSiffra1(button){
+    const firstInput = button.value;
+    // const firstInput = document.getElementById('siffra1').value;
     console.log(firstInput);
     return firstInput;
 }
@@ -17,4 +18,21 @@ function operator1(button){
    const secondInput = document.getElementById('siffra2').value;
    console.log(secondInput);
    return secondInput; 
+}
+
+
+function calculation() {
+    do {
+        for (){
+
+
+
+
+        }
+
+
+    }while(ternary == true)
+
+
+
 }
