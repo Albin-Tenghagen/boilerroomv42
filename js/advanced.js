@@ -5,6 +5,7 @@ let firstInput = null;
 let secondInput = null;
 let operator = null;
 
+
 function sparaSiffra1(button) {
     firstInput = Number(button.textContent); // Tilldelar värdet till den globala variabeln
     console.log("Första siffran:", firstInput);
@@ -59,19 +60,26 @@ function calculation() {
                 alert('Ogiltigt räknesätt, försök igen');
                 return;
         }
-
+        alert(`resultatet av ${firstInput} ${operator} ${secondInput} är = ${result}`)
         console.log(`Resultat: ${result}`);
 
         // Frågar om användaren vill fortsätta och läser in svaret
         let ternaryChoice = prompt('Vill du fortsätta? "Ja" eller "Nej"').toLowerCase();
         continueCalculation = ternaryChoice === "ja" ? true : false;
 
-        if (continueCalculation) {
-            // Återställ variabler för en ny beräkning
-            firstInput = null;
-            secondInput = null;
-            operator = null;
-        }
-
+        // if (continueCalculation) {
+        //     // Återställ variabler för en ny beräkning
+        //     firstInput = parseFloat(prompt("Ange första siffran:"));
+        //     operator = prompt("Ange operator (+, -, /, *, %, **):");
+        //     secondInput = parseFloat(prompt("Ange andra siffran:"));
+        // }
+        
+    if (continueCalculation) {   // Återställ variabler för en ny beräkning
+        firstInput = null;
+        secondInput = null;
+        operator = null;
+    }
+    
     } while (continueCalculation === true);
 }
+
