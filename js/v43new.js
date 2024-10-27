@@ -152,6 +152,7 @@ function calculate() {
                     document.getElementById("firstInput").value = "";
                     document.getElementById("secondInput").value = "";
                     document.getElementById("resultDisplay").textContent = "Result: ";
+                    document.getElementById("lastDisplay").textContent = `Last Result: ${firstInput} ${operator} ${secondInput} = ${result}`
                     operator = null;
                 } else {
                     // End the loop if the user does not want to continue
