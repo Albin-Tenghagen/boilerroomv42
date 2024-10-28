@@ -207,7 +207,7 @@ function calculate() {
                 // End the loop if the user does not want to continue
                 continueCalculation = false;
             }
-        }, 0); // Delay the prompt to allow page to update
+        }, 2000); // Delay the prompt to allow page to update(2000= 2seconds)
         break;
     }
 }
