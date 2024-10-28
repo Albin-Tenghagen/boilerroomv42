@@ -18,16 +18,16 @@ function saveAndDisplayResult(firstInput, operator, secondInput, result) {
     // Add a new entry with calculation details to the history
     resultHistory.push({ firstInput, operator, secondInput, result }); // changes the original array rather than creating a new one.
     
-    // This update the HTML to display the result history.. 
     const historyContainer = document.getElementById("resultHistory");
     historyContainer.innerHTML = ''; 
     
-    // This display each result in the history,
-    resultHistory.forEach((entry) => {
+   
+    for (let i = 0; i < resultHistory.length; i++) {
+        const entry = resultHistory[i];
         const listItem = document.createElement("li");
         listItem.textContent = `Result: ${entry.firstInput} ${entry.operator} ${entry.secondInput} = ${entry.result}`;
         historyContainer.appendChild(listItem);
-    });
+    }
 }
 
 // Function to perform calculations with a delay in the loop
